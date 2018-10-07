@@ -17,12 +17,13 @@ public class spawner : MonoBehaviour {
     //transform.position.y
     // Update is called once per frame
     void Update () {
+        //Lætur platfrom spawna randomly á vissum range og nota svo unity til að stilla spawn rate þar sem hún er public
         if (Time.time > nextSpawnPlatform)
         {
             nextSpawnPlatform = Time.time + spawnRatePlatform;
             Instantiate(platform, new Vector2(Random.Range(-9.49f, 9.49f), 5.54f), Quaternion.identity);
         }
-
+        // nákvæmlega það sama nema sér um að spawna coins
         if (Time.time > nextSpawnCoin)
         {
             nextSpawnCoin = Time.time + spawnRateCoin;

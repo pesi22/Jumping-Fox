@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// þetta scrip sér um að allt sem dettur ofan í vatið verði eytt, bæði platform og player
 
 public class CollDetector : MonoBehaviour {
-    int platform;
 	// Use this for initialization
 	void Start () {
 		
